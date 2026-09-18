@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz Femme et Vaccination — CVI Toulouse</title>
+<title>Quiz Femmes et Vaccination — CVI Toulouse</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -283,7 +283,7 @@ const QUESTIONS = [
       "Il n'y a pas de limite d'âge pour les femmes"
     ],
     correct: 2,
-    explanation: "La vaccination est recommandée dès l'âge de 11 ans et peut être réalisée jusqu'à 26 ans chez les filles et les garçons. Elle ne dispense pas du dépistage du col de l'utérus tous les 3 ans de 25 à 30 ans, puis tous les 5 ans de 30 à 65 ans."
+    explanation: "La vaccination est recommandée dès l'âge de 11 ans et peut être réalisée jusqu'à l'âge de 26 ans chez les filles et les garçons. Elle ne protège cependant pas contre tous les HPV liés au cancer du col de l'utérus : c'est pourquoi un dépistage doit être réalisé chez la femme tous les 3 ans de 25 à 30 ans, puis tous les 5 ans entre 30 et 65 ans, suivant les recommandations en vigueur."
   },
   {
     id: 3,
@@ -291,20 +291,21 @@ const QUESTIONS = [
     text: "Est-il nécessaire de recevoir des vaccins avant une grossesse ?",
     options: ["Oui", "Non"],
     correct: 0,
-    explanation: "Avant tout projet de grossesse, il est important de vérifier que la femme est bien protégée par la vaccination contre certaines maladies pouvant avoir des conséquences graves pendant la grossesse."
+    explanation: "Avant toute grossesse, il est important de s'assurer au mieux que la femme concernée est protégée par la vaccination contre certaines maladies."
   },
   {
     id: 4,
     category: "Avant une grossesse",
+    intro: "Voici quelques questions pour évaluer vos connaissances sur les vaccins recommandés pour être protégée de certaines maladies avant un projet de grossesse :",
     text: "Une femme de 28 ans n'a jamais contracté la varicelle et n'a jamais été vaccinée contre cette maladie. Quelle est la recommandation ?",
     options: [
       "La vaccination n'est pas nécessaire car la varicelle est bénigne chez l'adulte",
-      "Si elle n'a jamais eu la varicelle, cette femme doit être vaccinée avant de tomber enceinte, car le vaccin ne peut pas être réalisé au cours de la grossesse",
+      "Si elle n'a jamais eu la varicelle, cette femme doit être vaccinée avant de tomber enceinte, car le vaccin ne peut pas être réalisé au cours de la grossesse (risque pour le fœtus)",
       "La vaccination est possible pendant la grossesse",
       "La sérologie n'est pas recommandée avant 35 ans"
     ],
     correct: 1,
-    explanation: "Le vaccin contre la varicelle est un vaccin vivant : il est contre-indiqué pendant la grossesse et doit donc être fait en amont si la femme n'est pas immunisée."
+    explanation: "En effet, le vaccin contre la varicelle fait partie des vaccins vivants (c'est-à-dire conçus à partir d'agents infectieux vivants atténués) qui sont considérés comme susceptibles d'entraîner un risque infectieux pour le fœtus, qui n'a cependant jamais été constaté pour le moment. Par prudence, ils sont tout de même contre-indiqués au cours d'une grossesse."
   },
   {
     id: 5,
@@ -317,7 +318,7 @@ const QUESTIONS = [
       "Parce que le vaccin ROR est remboursé uniquement avant 18 ans"
     ],
     correct: 1,
-    explanation: "La rubéole contractée pendant la grossesse est la 1ère cause de malformation congénitale d'origine infectieuse. Le vaccin ROR (rougeole-oreillons-rubéole) fait partie des avccins dits "vivants", c'est à dire conçus à partir d'agents infectieux et présenteraient un risque infectieux pour le foetus. Mais ce risque reste théorique, si le vaccin est réalisé par inadvertance il n'y pas de raison d'interrompre la grossesse. Mais par prudence, il est préférable de faire ces vaccins en dehors de toute grossesse en cours, et au moins un mois avant"
+    explanation: "Il est important en effet de vérifier si l'on est protégée contre certaines maladies évitables par la vaccination, avant un projet de grossesse. Car certaines de ces maladies (comme la varicelle, la rubéole ou la rougeole par exemple) peuvent avoir des conséquences graves chez le fœtus (la rubéole est la 1ère cause de malformation congénitale d'origine infectieuse) ou chez la femme enceinte, et certains vaccins ne peuvent être réalisés pendant la grossesse.<br><br>Le vaccin contre la rougeole protège également contre la rubéole et les oreillons. Il fait partie des vaccins obligatoires chez les enfants de moins de 2 ans depuis 2018 : les personnes nées avant 2018 n'ont donc parfois pas reçu ce vaccin. Il est important de vérifier que vous l'ayez bien reçu."
   },
   {
     id: 6,
@@ -330,20 +331,20 @@ const QUESTIONS = [
       "Elle n'est recommandée que pour les femmes avec comorbidités"
     ],
     correct: 1,
-    explanation: "La vaccination contre la COVID-19 est recommandée dès le premier trimestre de grossesse, avec les vaccins à ARNm adaptés aux variants circulants."
+    explanation: "En effet, le Covid-19 peut avoir des conséquences graves chez une femme enceinte, que ce soit pour elle-même ou pour le fœtus (risque de décès, d'avortement spontané, de prématurité...), comme lorsque toute infection survient au cours de la grossesse."
   },
   {
     id: 7,
     category: "Pendant une grossesse",
     text: "Quels vaccins sont à réaliser systématiquement au cours d'une grossesse, même si la femme est à jour de tous ses vaccins du calendrier français ?",
     options: [
-      "La vaccination contre la grippe / la Covid-19 (ARNm) / la coqueluche / le VRS",
+      "La vaccination contre la grippe / la Covid-19 (ARNm) / la coqueluche / le VRS (virus responsable des bronchiolites du nourrisson)",
       "Aucune",
       "La vaccination contre la coqueluche seulement",
       "La vaccination contre la rougeole / la toxoplasmose / la coqueluche"
     ],
     correct: 0,
-    explanation: "Grippe (tout trimestre), Covid-19 (dès le 1er trimestre), coqueluche (à partir du 2e trimestre, idéalement entre 20 et 36 SA) et VRS (Abrysvo, 32-36 SA) sont recommandés à chaque grossesse, y compris chez les femmes déjà vaccinées auparavant."
+    explanation: "• Grippe saisonnière : recommandée chez la femme enceinte, quel que soit le trimestre de grossesse.<br>• COVID-19 : recommandée dès le premier trimestre de la grossesse.<br>• Coqueluche : recommandée à partir du 2e trimestre, de préférence entre les semaines d'aménorrhée 20 et 36 — une femme déjà vaccinée avant sa grossesse doit être revaccinée pendant celle-ci, pour transférer suffisamment d'anticorps au fœtus.<br>• Bronchiolite à VRS : l'épidémie touche un nourrisson sur trois chaque hiver ; pour le protéger, on peut vacciner la mère pendant la grossesse ou traiter le bébé à sa naissance.<br><br>En effet, ces maladies peuvent avoir des conséquences plus graves chez une femme enceinte qu'en population générale."
   },
   {
     id: 8,
@@ -353,10 +354,10 @@ const QUESTIONS = [
       "Le vaccin contre l'hépatite A",
       "Le vaccin contre la grippe",
       "Le vaccin ROR (rougeole-oreillons-rubéole)",
-      "Le vaccin contre la coqueluche (dTCaP)"
+      "Le vaccin contre la coqueluche (diphtérie - tétanos - coqueluche - poliomyélite)"
     ],
     correct: 2,
-    explanation: "Les vaccins vivants ou vivants atténués (ROR, varicelle) sont formellement contre-indiqués pendant la grossesse en raison d'un risque théorique d'infection du fœtus. Une grossesse doit être évitée dans le mois suivant ce type de vaccination."
+    explanation: "Les vaccins vivants ou vivants atténués ne doivent en aucun cas être utilisés pendant la grossesse, en raison d'un risque potentiel d'infection du fœtus : c'est le cas des vaccins contre la rougeole, les oreillons, la rubéole (ROR) et la varicelle. Par précaution, toute grossesse doit être évitée dans le mois qui suit ce type de vaccination.<br><br>La vaccination est essentielle pour la protection de la mère et de son futur enfant contre des maladies potentiellement graves comme la coqueluche, la grippe ou la Covid-19. Elle concerne directement la future mère — qu'elle ait un projet de grossesse ou qu'elle soit déjà enceinte — mais aussi son entourage, pour une meilleure protection collective. Une maman vaccinée transmet à son enfant les anticorps nécessaires pour lutter contre ces maladies dès sa naissance, en attendant sa propre vaccination."
   },
   {
     id: 9,
@@ -376,13 +377,13 @@ const QUESTIONS = [
     category: "Après une grossesse",
     text: "Quel vaccin est recommandé en France chez la femme enceinte pour protéger le nourrisson contre le VRS (virus responsable des bronchiolites) ?",
     options: [
-      "Le vaccin Arexvy®, administré au 1er trimestre",
-      "Le vaccin Abrysvo® (Pfizer), administré entre la 32e et la 36e SA pendant la saison épidémique",
-      "Le vaccin Beyfortus®, administré à la mère au 2e trimestre",
+      "Le vaccin AREXVY®, administré au 1er trimestre",
+      "Le vaccin ABRYSVO® (Pfizer), administré entre la 32e et la 36e SA pendant la saison épidémique",
+      "Le vaccin BEYFORTUS®, administré à la mère au 2e trimestre",
       "Il n'existe pas de vaccin recommandé chez la femme enceinte contre le VRS en France"
     ],
     correct: 1,
-    explanation: "Vacciner la mère avec Abrysvo® entre 32 et 36 SA, pendant la saison épidémique, permet à l'enfant de disposer d'anticorps protecteurs dès la naissance et jusqu'à 6 mois."
+    explanation: "Le Virus Respiratoire Syncytial (VRS) peut avoir des conséquences graves chez le nouveau-né. Vacciner la maman avant la naissance permet à l'enfant d'avoir des anticorps qui le protègent dès la naissance et jusqu'à 6 mois de vie."
   }
 ];
 
@@ -405,7 +406,7 @@ const BONUS_QUESTIONS = [
     text: "Vrai ou faux : il n'y a pas plus de risque lorsque l'on contracte la grippe ou la Covid-19, que l'on ait 20 ou 70 ans.",
     options: ["Vrai", "Faux"],
     correct: 1,
-    explanation: "La vaccination contre la grippe et la Covid-19 est recommandée chaque automne à toutes les personnes de 65 ans et plus, dont le risque de forme grave augmente avec l'âge."
+    explanation: "La vaccination contre la grippe est recommandée chaque année à toutes les personnes de 65 ans et plus. Pour la Covid-19, elle est recommandée à l'ensemble des personnes de 65 ans et plus chaque automne, avec une dose supplémentaire au printemps pour les personnes de 80 ans et plus, les résidents d'EHPAD/USLD, et les personnes immunodéprimées quel que soit leur âge."
   },
   {
     id: "b2",
@@ -421,7 +422,7 @@ const BONUS_QUESTIONS = [
     text: "Vrai ou faux : en dehors de la vaccination contre la grippe et la Covid-19, recommandée chaque année, il n'y a pas d'autre vaccin particulier à réaliser chez les personnes âgées.",
     options: ["Vrai", "Faux"],
     correct: 1,
-    explanation: "Le pneumocoque et le zona sont recommandés à partir de 65 ans, et la vaccination contre le VRS à partir de 75 ans (ou 65 ans en cas de pathologie respiratoire ou cardiaque chronique)."
+    explanation: "Pneumocoque : recommandé pour tous les 65 ans et plus. Zona : recommandé à partir de 65 ans. Bronchiolites/VRS : recommandé pour l'ensemble des personnes de 75 ans et plus, et pour celles de 65 ans et plus présentant une pathologie respiratoire chronique (notamment BPCO) ou cardiaque (notamment insuffisance cardiaque)."
   }
 ];
 
@@ -482,7 +483,7 @@ function progressBar(current, total){
 function renderIntro(){
   app.innerHTML = `
     <p class="eyebrow">Journée de la santé — Santé des femmes</p>
-    <h1>Femme et vaccination</h1>
+    <h1>Femmes et vaccination</h1>
     <div class="card">
       <p>${INTRO_TEXT.replace(/\n\n/g,'</p><p>')}</p>
     </div>
@@ -622,7 +623,7 @@ function renderBonus(){
   const q = BONUS_QUESTIONS[state.bonusIndex];
   app.innerHTML = "";
   const header = document.createElement("div");
-  header.innerHTML = `<h2>Pour aller plus loin</h2><p class="muted">Puisque vous avez 56 ans ou plus, voici trois questions complémentaires (facultatives).</p>`;
+  header.innerHTML = `<h2>Pour aller plus loin</h2><p class="muted">« Rester en bonne santé et en forme après 65 ans passe aussi par la vaccination. De nombreuses maladies infectieuses peuvent occasionner des complications d'autant plus importantes que l'on prend de l'âge ou que l'on est atteint de pathologie(s) chronique(s). Il est donc essentiel de se protéger en fonction des recommandations vaccinales. »</p>`;
   app.appendChild(header);
   renderQuestionCard(q, () => {
     if (state.bonusIndex < BONUS_QUESTIONS.length - 1){
@@ -701,7 +702,7 @@ function renderPoster(){
   app.innerHTML = `
     <div class="poster">
       <p class="eyebrow">23 septembre — Jardin du Grand Rond, Toulouse</p>
-      <h1>Femme et vaccination<br>Testez vos connaissances</h1>
+      <h1>Femmes et vaccination<br>Testez vos connaissances</h1>
       <div id="qrcode"></div>
       <p class="muted">Scannez ce QR code pour répondre au quiz</p>
       <div class="row no-print" style="justify-content:center; gap:12px;">
